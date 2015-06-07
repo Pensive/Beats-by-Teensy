@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.2</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>{07b459b4-8d76-4638-bc6d-a459ba2d616b}</ProjectGuid>
+    <avrdevice>ATmega2560</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>beatsbyteensy</AssemblyName>
+    <Name>beatsbyteensy</Name>
+    <RootNamespace>beatsbyteensy</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue>
+    </OverrideVtorValue>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>0</BootSegment>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.6.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <preserveEEPROM>true</preserveEEPROM>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=106</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>__AVR__</Value>
+      <Value>F_CPU=96000000</Value>
+      <Value>USB_SERIAL</Value>
+      <Value>LAYOUT_US_ENGLISH</Value>
+      <Value>__MK20DX256__</Value>
+      <Value>TEENSYDUINO=120</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value></Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/lib/gcc/arm-none-eabi/4.7.2/include/</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/lib/gcc/arm-none-eabi/4.7.2/include</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/arm-none-eabi/include</Value>
+      <Value>C:/Users/Jon Payne/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Metro/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Metro</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Encoder/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Encoder</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/PS2MiniPac/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/PS2MiniPac</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/ST7565/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/ST7565</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Bounce/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Bounce</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SD/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SD</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SPI/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SPI</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Wire/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Wire</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Audio/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Audio</Value>
+      <Value>../../beatsbyteensy</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3/avr</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3/utils</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=106</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>__AVR__</Value>
+      <Value>F_CPU=96000000</Value>
+      <Value>USB_SERIAL</Value>
+      <Value>LAYOUT_US_ENGLISH</Value>
+      <Value>__MK20DX256__</Value>
+      <Value>TEENSYDUINO=120</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value></Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/lib/gcc/arm-none-eabi/4.7.2/include/</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/lib/gcc/arm-none-eabi/4.7.2/include</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/arm-none-eabi/include</Value>
+      <Value>C:/Users/Jon Payne/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Metro/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Metro</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Encoder/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Encoder</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/PS2MiniPac/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/PS2MiniPac</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/ST7565/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/ST7565</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Bounce/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Bounce</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SD/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SD</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SPI/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SPI</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Wire/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Wire</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Audio/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Audio</Value>
+      <Value>../../beatsbyteensy</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3/avr</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3/utils</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3;C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3/utils;C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3/avr;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/teensy/libraries;C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers;C:/Users/Jon Payne/Documents/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/arm-none-eabi/include;C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/lib/gcc/arm-none-eabi/4.7.2/include;C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/lib/gcc/arm-none-eabi/4.7.2/include/;;C:/Program Files (x86)/Arduino/libraries/Audio;C:/Program Files (x86)/Arduino/libraries/Audio/utility;C:/Program Files (x86)/Arduino/libraries/Wire;C:/Program Files (x86)/Arduino/libraries/Wire/utility;C:/Program Files (x86)/Arduino/libraries/SPI;C:/Program Files (x86)/Arduino/libraries/SPI/utility;C:/Program Files (x86)/Arduino/libraries/SD;C:/Program Files (x86)/Arduino/libraries/SD/utility;C:/Program Files (x86)/Arduino/libraries/Bounce;C:/Program Files (x86)/Arduino/libraries/Bounce/utility;C:/Program Files (x86)/Arduino/libraries/ST7565;C:/Program Files (x86)/Arduino/libraries/ST7565/utility;C:/Program Files (x86)/Arduino/libraries/PS2Keyboard;C:/Program Files (x86)/Arduino/libraries/PS2Keyboard/utility;C:/Program Files (x86)/Arduino/libraries/PS2MiniPac;C:/Program Files (x86)/Arduino/libraries/PS2MiniPac/utility;C:/Program Files (x86)/Arduino/libraries/Metro;C:/Program Files (x86)/Arduino/libraries/Metro/utility;C:/Program Files (x86)/Arduino/libraries/Encoder;C:/Program Files (x86)/Arduino/libraries/Encoder/utility;../../beatsbyteensy;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <VM_ADDITIONAL_PREPROC>F_CPU=96000000;USB_SERIAL;LAYOUT_US_ENGLISH</VM_ADDITIONAL_PREPROC>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=106</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>__AVR__</Value>
+      <Value>F_CPU=96000000</Value>
+      <Value>USB_SERIAL</Value>
+      <Value>LAYOUT_US_ENGLISH</Value>
+      <Value>__MK20DX256__</Value>
+      <Value>TEENSYDUINO=120</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value></Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/lib/gcc/arm-none-eabi/4.7.2/include/</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/lib/gcc/arm-none-eabi/4.7.2/include</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/arm-none-eabi/include</Value>
+      <Value>C:/Users/Jon Payne/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Metro/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Metro</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Encoder/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Encoder</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/PS2MiniPac/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/PS2MiniPac</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/ST7565/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/ST7565</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Bounce/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Bounce</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SD/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SD</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SPI/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SPI</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Wire/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Wire</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Audio/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Audio</Value>
+      <Value>../../beatsbyteensy</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3/avr</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3/utils</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=106</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>__AVR__</Value>
+      <Value>F_CPU=96000000</Value>
+      <Value>USB_SERIAL</Value>
+      <Value>LAYOUT_US_ENGLISH</Value>
+      <Value>__MK20DX256__</Value>
+      <Value>TEENSYDUINO=120</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value></Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/lib/gcc/arm-none-eabi/4.7.2/include/</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/lib/gcc/arm-none-eabi/4.7.2/include</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/arm-none-eabi/include</Value>
+      <Value>C:/Users/Jon Payne/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Metro/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Metro</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Encoder/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Encoder</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/PS2MiniPac/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/PS2MiniPac</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/ST7565/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/ST7565</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Bounce/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Bounce</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SD/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SD</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SPI/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/SPI</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Wire/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Wire</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Audio/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries/Audio</Value>
+      <Value>../../beatsbyteensy</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3/avr</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3/utils</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3;C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3/utils;C:/Program Files (x86)/Arduino/hardware/teensy/cores/teensy3/avr;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/teensy/libraries;C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers;C:/Users/Jon Payne/Documents/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/arm-none-eabi/include;C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/lib/gcc/arm-none-eabi/4.7.2/include;C:/Program Files (x86)/Arduino/hardware/tools/arm-none-eabi/lib/gcc/arm-none-eabi/4.7.2/include/;;C:/Program Files (x86)/Arduino/libraries/Audio;C:/Program Files (x86)/Arduino/libraries/Audio/utility;C:/Program Files (x86)/Arduino/libraries/Wire;C:/Program Files (x86)/Arduino/libraries/Wire/utility;C:/Program Files (x86)/Arduino/libraries/SPI;C:/Program Files (x86)/Arduino/libraries/SPI/utility;C:/Program Files (x86)/Arduino/libraries/SD;C:/Program Files (x86)/Arduino/libraries/SD/utility;C:/Program Files (x86)/Arduino/libraries/Bounce;C:/Program Files (x86)/Arduino/libraries/Bounce/utility;C:/Program Files (x86)/Arduino/libraries/ST7565;C:/Program Files (x86)/Arduino/libraries/ST7565/utility;C:/Program Files (x86)/Arduino/libraries/PS2Keyboard;C:/Program Files (x86)/Arduino/libraries/PS2Keyboard/utility;C:/Program Files (x86)/Arduino/libraries/PS2MiniPac;C:/Program Files (x86)/Arduino/libraries/PS2MiniPac/utility;C:/Program Files (x86)/Arduino/libraries/Metro;C:/Program Files (x86)/Arduino/libraries/Metro/utility;C:/Program Files (x86)/Arduino/libraries/Encoder;C:/Program Files (x86)/Arduino/libraries/Encoder/utility;../../beatsbyteensy;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <VM_ADDITIONAL_PREPROC>F_CPU=96000000;USB_SERIAL;LAYOUT_US_ENGLISH</VM_ADDITIONAL_PREPROC>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="beatsbyteensy.ino">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Visual Micro\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bbt_audio.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="bbt_file.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="bbt_input.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="bbt_lcd.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="bbt_ps2input.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="bbt_seq.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="bbt_synth.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="beatsbyteensy_glcd.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="play_serialflash.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="play_serialflash.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Visual Micro\.beatsbyteensy.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
